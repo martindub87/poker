@@ -51,6 +51,16 @@ class StandardDeck (object):
     def deal_a_card(self):
         return self.shuffled_deck.pop(0)
 
+class PlayerHandEval(object):
+
+    def __init__(self, table, player):
+
+        self.table = table
+        self.player = player
+
+    def __repr__(self):
+        return 
+
 deck = StandardDeck(showing = True)
 
 print("------\\\\------")
